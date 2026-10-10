@@ -1,0 +1,16 @@
+student_id,student_name,program,batch_year,company,job_role,offer_type,annual_package,placement_status,offer_date
+S001,Ananya Rao,ME CSE,2026,Infosys,Software Engineer,Full-Time,850000,Selected,8/10/2026
+S002,Rahul Kumar,ME BDA,2026,Databricks,Data Engineer,Internship,1000000,Selected,8/12/2026
+S003,Meera Shetty,ME CSE,2026,Microsoft,Software Engineer,Full-Time,1800000,Selected,8/16/2026
+S004,Arjun Pai,ME Cloud Computing,2026,AWS,Cloud Engineer,Internship,900000,Selected,8/18/2026
+S005,Nisha Rao,ME BDA,2026,Accenture,Data Engineer,Full-Time,1450000,Selected,8/20/2026
+S006,Vikram Singh,ME Cyber Security,2026,Palo Alto,Security Analyst,Full-Time,1200000,Selected,8/22/2026
+S007,Priya Nair,ME CSE,2026,Infosys,Software Engineer,Full-Time,850000,Selected,8/24/2026
+S008,Kiran Kumar,ME Cloud Computing,2026,AWS,Cloud Engineer,Internship,900000,Selected,8/25/2026
+S009,Asha Bhat,ME BDA,2026,,,Not Offered,0,Not Selected,
+S010,Rohan Das,ME Cyber Security,2026,,,Not Offered,0,Not Selected,
+S011,Divya Rao,ME CSE,2025,TCS,System Engineer,Full-Time,700000,Selected,9/10/2025
+S012,Manoj Pai,ME BDA,2025,Databricks,Data Engineer,Full-Time,1700000,Selected,9/15/2025
+S013,Sneha Jain,ME Cloud Computing,2025,IBM,Cloud Developer,Full-Time,950000,Selected,9/20/2025
+S014,Ajay Kumar,ME Cyber Security,2025,Wipro,Security Engineer,Full-Time,720000,Selected,9/22/2025
+S015,Neha Sharma,ME CSE,2025,,,Not Offered,0,Not Selected,
