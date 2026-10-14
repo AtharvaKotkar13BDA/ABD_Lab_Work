@@ -1,0 +1,92 @@
+start-dfs.sh && start-yarn.sh
+
+to start MySQL:
+sudo MySQL
+sois@123
+
+some sql command:
+
+show databases;
+show tables;
+select <dbname>;
+
+to give access of SQL:
+
+GRANT ALL PRIVILEGES ON *.* TO 'msis'@'localhost' IDENTIFIED BY 'mahe';
+GRANT ALL PRIVILEGES ON *.* TO 'neel'@'localhost' IDENTIFIED BY 'neel';
+
+*.* = means giving acess to all database, we can select db as per our choice too
+msis - we can change name as per our choice
+for remote acces we have to use - 'ip-addess' instead of 'localhost'
+'mahe' = password; that we want.
+
+
+
+
+SQOOP:
+
+import = from local to hdfs
+export = from hdfs to local
+
+
+
+to connect db: sqoop list-databases --connect jdbc:mysql://localhost?useSSL=flase --username neel --password neel
+to select table: sqoop list-tables --connect jdbc:mysql://localhost?useSSL=false --username neel --password neel
+
+
+to transfer data from 1 table then we use : target-dir				 #it create folder and inside that there is actual data; most of case we use this method.
+to transfer data from multiple table then we use: warehouse-dir      		# we have to create folder here by our self.
+
+target-dir:  sqoop import --connect jdbc:mysql://localhost/retail_db?useSSL=false --username neel -password neel --table orders --target-dir '/target-dir data'
+then: open haddop administrator and in utilites go to files and then we can access the data.
+
+for warehouse-dir:
+1. create directory using command: hdfs dfs -mkdir /<folder_name>
+2. sqoop import --connect jdbc:mysql://localhost/retail_db?useSSL=false --username neel -password neel --table orders --warehouse-dir '/<Name of dir that we created>'
+
+
+
+to import partial data:
+
+sqoop import --connect jdbc:mysql://localhost/retail_db?useSSL=false --username neel -password neel --table orders --warehouse-dir '/SQOOP' --where "order_id > 68800"
+
+to import columns: 
+sqoop import --connect jdbc:mysql://localhost/retail_db?useSSL=false --username neel -password neel --columns order_id,order_customer_id --table orders --target-dir '/'
+
+
+
+
+to import all tables from given database: use warehouse-dir compulsory
+
+sqoop import-all-tables --connect jdbc:mysql://localhost/retail_db?useSSL=false --username neel -password neel --warehouse-dir '/ '
+
+
+
+to import all tables excluding some tables from given database: use warehouse-dir compulsory
+
+sqoop import-all-tables --connect jdbc:mysql://localhost/retail_db?useSSL=false --username neel -password neel --warehouse-dir '/ ' --exclude-tables orders,customers
+
+
+
+to export:
+1. need empty table in sql with same metadata.
+2. sqoop export --connect jdbc:mysql://localhost/test1?useSSl=false --username neel -password neel --table test_table --export-dir'/user/test1' 
+
+
+
+
+
+
+HIVE:
+to run: hive
+to create db: CRETAE DATABASE >hivedemo<
+
+once we move(load) data into hive then it removes from hdfs;
+command: load data inpath '<path of hdfs>' into table <database name>.<table name we want to copy in>;
+
+
+
+
+
+
+
