@@ -1,0 +1,16 @@
+Date,Average Temperature,City,Country,Latitude,Longitude
+2024-01-01,24.5,Bangalore,India,12.97,77.59
+2024-01-02,25.1,Bangalore,India,12.97,77.59
+2024-01-03,23.8,Bangalore,India,12.97,77.59
+2024-01-01,29.2,Mumbai,India,19.08,72.88
+2024-01-02,30.0,Mumbai,India,19.08,72.88
+2024-01-03,28.7,Mumbai,India,19.08,72.88
+2024-01-01,18.4,Delhi,India,28.61,77.21
+2024-01-02,19.6,Delhi,India,28.61,77.21
+2024-01-03,17.9,Delhi,India,28.61,77.21
+2024-01-01,26.1,Chennai,India,13.08,80.27
+2024-01-02,27.3,Chennai,India,13.08,80.27
+2024-01-03,25.8,Chennai,India,13.08,80.27
+2024-01-04,24.9,Bangalore,India,12.97,77.59
+2024-01-04,31.2,Mumbai,India,19.08,72.88
+2024-01-04,20.3,Delhi,India,28.61,77.21
